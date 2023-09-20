@@ -11,7 +11,8 @@ const Upcomming = () => {
                 <div className="masthead-content text-white">
                     <div className="container-fluid px-4 px-lg-0">
                         <h1 className="fst-italic lh-1 mb-4">Coming Soon</h1>
-                        <p className="mb-5">We're working hard to finish the development of this page. Click  below home button to go back to home page. we launch this page soon!</p>
+                        <p className="mb-5">We&apos;re working hard to finish the development of this page.
+                         Click  below home button to go back to home page. we launch this page soon!</p>
                         {/* <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <div className="row input-group-newsletter">
                                 <div className="col"><input className="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
