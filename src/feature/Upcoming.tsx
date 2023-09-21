@@ -5,7 +5,7 @@ const Upcomming = () => {
     return (
         <div className='container upcoming-container'>
                  
-                    <video className="bg-video" playsInline={true} autoPlay={true} muted={true} loop={true}><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
+                    {/* <video className="bg-video" playsInline={true} autoPlay={true} muted={true} loop={true}><source src="assets/mp4/bg.mp4" type="video/mp4" /></video> */}
 
             <div className="masthead">
                 <div className="masthead-content text-white">

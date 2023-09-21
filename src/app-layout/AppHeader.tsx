@@ -4,7 +4,7 @@ import React from 'react'
 
 const AppHeader = () => {
     return (
-        <div>
+        <div className='mb-5'>
             <section className="ftco-section">
                 {/* <div className="container">
                     <div className="row justify-content-center">
@@ -21,7 +21,7 @@ const AppHeader = () => {
                                 <Link href='/' className="navbar-brand" >Bolerplate <span>code</span></Link>
                                 </div>
                                 <div className="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
-                                    <form action="/upcoming" className="searchform order-lg-last">
+                                    <form action="#" className="searchform order-lg-last">
                                         <div className="form-group d-flex">
                                             <input type="text" className="form-control pl-3" placeholder="Search" />
                                             <button type="submit" placeholder="" className="form-control search"><span className="fa fa-search"></span></button>
@@ -51,16 +51,18 @@ const AppHeader = () => {
                             <ul className="navbar-nav m-auto">
                                 <li className="nav-item "><Link href='/' className="nav-link">Home</Link></li>
                                 <li className="nav-item dropdown">
-                                    <Link href='/upcoming' className="nav-link dropdown-toggle" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page</Link>
-                                    <div className="dropdown-menu" aria-labelledby="dropdown04">
-                                        <Link href='/upcoming' className="dropdown-item">Page 1</Link>
-                                        <Link href='/upcoming' className="dropdown-item">Page 2</Link>
-                                        <Link href='/upcoming' className="dropdown-item">Page 3</Link>
-                                        <Link href='/upcoming' className="dropdown-item">Page 4</Link>
-                                    </div>
+                                    <div className="nav-link dropdown-toggle "
+                                     id="dropdown04" data-bs-toggle="dropdown" 
+                                    aria-haspopup="true" role="button" aria-expanded="false">Page</div>
+                                    <ul className="dropdown-menu" aria-labelledby="dropdown04">
+                                       <li> <Link href='/upcoming' className="dropdown-item">Page 1</Link></li>
+                                       <li> <Link href='/upcoming' className="dropdown-item">Page 2</Link></li>
+                                       <li> <Link href='/upcoming' className="dropdown-item">Page 3</Link></li>
+                                       <li> <Link href='/upcoming' className="dropdown-item">Page 4</Link></li>
+                                    </ul>
                                 </li>
                                 <li className="nav-item"><Link href='/upcoming' className="nav-link">Work</Link></li>
-                                <li className="nav-item"><Link href='/upcoming' className="nav-link">Blog</Link></li>
+                                <li className="nav-item"><Link href='/blog' className="nav-link">Blog</Link></li>
                                 <li className="nav-item"><Link href='/upcoming' className="nav-link">Contact</Link></li>
                             </ul>
                         </div>
