@@ -1,6 +1,10 @@
+import AppHeader from '@/app-layout/AppHeader'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Head from 'next/head'
+import 'bootstrap/dist/css/bootstrap.css'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +20,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      </Head>
+      <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+
+      </head>
+      <body className={inter.className} >
+        <AppHeader />
+        {children}
+
+      </body>
     </html>
   )
 }
